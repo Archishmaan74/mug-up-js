@@ -35,3 +35,21 @@ let isLoggedIn = true;
 let valueIsBoolean = Boolean(isLoggedIn);
 console.log(typeof valueIsBoolean);
 console.log(valueIsBoolean);
+
+// **********************Operations**********************
+
+let value = 3;
+let negValue = -value;
+console.log(negValue);
+
+console.log(2 ** 3); // 2^3 = 8
+
+let srtr1 = "Hello";
+let str2 = " Archishmaan!";
+let str3 = srtr1 + str2;
+console.log(str3);
+
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+console.log(+true);
+console.log(+""); // checks operator precedence // NOT A GOOD PRACTICE
