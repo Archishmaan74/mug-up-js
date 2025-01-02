@@ -23,3 +23,28 @@ let myObj = {
 const helloFunction = function () {
   log("Hello World");
 };
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) vs Heap (Non Primitive)
+// Whenever we create a variable, it's stored in the stack. If it's a primitive type, it's stored in the stack. If it's a non-primitive type, it's stored in the heap.
+
+let myGamingName = "skti";
+
+let anotherName = myGamingName;
+anotherName = "sakib";
+
+console.log(myGamingName);
+console.log(anotherName);
+
+let userOne = {
+  email: "user@google.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "user2@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
