@@ -3,6 +3,11 @@ let score1 = null;
 let score2 = "33abascsa";
 let score3 = "undefined";
 let score4 = "true";
+let value1 = {
+  name: "Archishmaan",
+};
+
+console.log(typeof value1); // object
 
 console.log(typeof score);
 
