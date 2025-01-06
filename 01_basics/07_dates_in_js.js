@@ -22,8 +22,8 @@ console.log(myDate3.getFullYear()); // It gives the year.
 console.log(myDate3.getMonth()); // It gives the month. 0 based index.
 console.log(myDate3.getDate()); // It gives the date.
 
-// `${newDate.getDate()} and the time `
+// `${myDate.getDate()} and the time `
 
-newDate.toLocaleString("default", {
+myDate.toLocaleString("default", {
   weekday: "long",
 });
