@@ -6,25 +6,25 @@ let score4 = "true";
 
 console.log(typeof score);
 
-let valueInNumber = Number(score);
-console.log(typeof valueInNumber);
-console.log(valueInNumber);
+let valueInNumber = Number(score); // type conversion
+console.log(typeof valueInNumber); // number
+console.log(valueInNumber); // 33
 
 let valueInNumber1 = Number(score1);
-console.log(typeof valueInNumber1);
-console.log(valueInNumber1);
+console.log(typeof valueInNumber1); // number
+console.log(valueInNumber1); // 0
 
 let valueInNumber2 = Number(score2);
-console.log(typeof valueInNumber2);
-console.log(valueInNumber2);
+console.log(typeof valueInNumber2); // number
+console.log(valueInNumber2); // NaN
 
 let valueInNumber3 = Number(score3);
-console.log(typeof valueInNumber3);
-console.log(valueInNumber3);
+console.log(typeof valueInNumber3); // number
+console.log(valueInNumber3); // NaN
 
 let valueInNumber4 = Number(score4);
-console.log(typeof valueInNumber4);
-console.log(valueInNumber4);
+console.log(typeof valueInNumber4); // number
+console.log(valueInNumber4); // 1
 
 // "33" => 33
 // "33abc" => NaN
@@ -33,8 +33,8 @@ console.log(valueInNumber4);
 let isLoggedIn = true;
 
 let valueIsBoolean = Boolean(isLoggedIn);
-console.log(typeof valueIsBoolean);
-console.log(valueIsBoolean);
+console.log(typeof valueIsBoolean); // boolean
+console.log(valueIsBoolean); // true
 
 // **********************Operations**********************
 
