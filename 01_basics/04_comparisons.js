@@ -10,6 +10,6 @@ console.log(null >= 0); // It's true because null is converted to 0 as compariso
 
 console.log(undefined > 0);
 console.log(undefined == 0);
-console.log(undefined >= 0); // It's false because undefined is converted to NaN as comparison operators convert undefined to a number.
+console.log(undefined >= 0); // It's false because undefined can't be converted to a number.
 
 // === is used for strict equality comparison. It doesn't do type conversion.
