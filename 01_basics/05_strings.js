@@ -9,7 +9,7 @@ console.log(
 
 const gameName = new String("Skti-44");
 console.log(gameName[0]);
-console.log(gameName.__proto__);
+console.log(gameName.__proto__); // String
 
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
@@ -21,6 +21,8 @@ console.log(newString);
 
 const anotherString = gameName.slice(-4, 6);
 console.log(anotherString);
+
+// difference between slice and substring is that slice can take negative values
 
 const newStringOne = "  Archishmaan  ";
 console.log(newStringOne);
