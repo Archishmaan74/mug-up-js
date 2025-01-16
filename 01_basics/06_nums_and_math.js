@@ -11,6 +11,8 @@ console.log(balance.toFixed(2));
 const otherNumber = 100.823;
 console.log(otherNumber.toPrecision(4));
 
+// the difference between toFixed and toPrecision is that toFixed will always return the number of decimal places you specify, while toPrecision will return the number of digits you specify.
+
 const lotsOfZeroes = 1000000;
 console.log(lotsOfZeroes.toLocaleString("en-IN"));
 
