@@ -16,6 +16,8 @@ console.log(otherNumber.toPrecision(4));
 const lotsOfZeroes = 1000000;
 console.log(lotsOfZeroes.toLocaleString("en-IN"));
 
+// toLocaleString() returns a string with a language-sensitive representation of this number.
+
 // ++++++++++++++++++++ Maths ++++++++++++++++++++
 
 console.log(Math);
