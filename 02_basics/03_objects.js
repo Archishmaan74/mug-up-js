@@ -1,6 +1,3 @@
-// singleton
-// Object.create
-
 // object literals
 const mySymbol = Symbol("key1");
 
