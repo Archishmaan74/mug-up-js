@@ -45,10 +45,10 @@ function addOne(num) {
   return num + 1;
 }
 
-addTwo(8); // Reference error: addTwo is not defined
-const addTwo = function (num) {
-  return num + 2;
-};
+// addTwo(8); // Reference error: addTwo is not defined
+// const addTwo = function (num) {
+//   return num + 2;
+// };
 
 // addTwo(8) results in a reference error because the function is not hoisted. The function expression is not hoisted, so it cannot be called before it is defined.
 // The function declaration is hoisted, so it can be called before it is defined. This is because the function declaration is stored in memory before the code is executed, while the function expression is not stored in memory until the code is executed.
