@@ -35,3 +35,20 @@ if (userDetails) {
 
 // falsy values:
 // 0, "", null, undefined, NaN, false
+
+// Nullish Coalescing Operator (??) is a logical operator that returns the right-hand operand when the left-hand operand is null or undefined, and otherwise returns the left-hand operand. It is often used to provide default values for variables that may be null or undefined.
+let val1;
+val1 = 5 ?? 10; // 5
+val1 = null ?? 10; // 10
+val1 = undefined ?? 10; // 10
+val1 = 0 ?? 10; // 0
+val1 = "" ?? 10; // ""
+val1 = false ?? 10; // false
+val1 = NaN ?? 10; // NaN
+val1 = null ?? undefined; // undefined
+
+// Ternary Operator
+// condition ? expressionIfTrue : expressionIfFalse
+const userLoggedIn = true;
+const userName = userLoggedIn ? "Archishmaan" : "Guest";
+console.log(userName); // Archishmaan
