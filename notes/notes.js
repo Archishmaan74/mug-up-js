@@ -48,3 +48,16 @@ userTwo.email = "user2@google.com";
 
 console.log(userOne.email);
 console.log(userTwo.email);
+
+// Fibonacci Series
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
+
+let nxt,
+  n1 = 0,
+  n2 = 1;
+for (let i = 0; i < 10; i++) {
+  console.log(n1);
+  nxt = n1 + n2;
+  n1 = n2;
+  n2 = nxt;
+}
