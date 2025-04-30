@@ -61,3 +61,17 @@ for (let i = 0; i < 10; i++) {
   n1 = n2;
   n2 = nxt;
 }
+
+// window is the global object in the browser
+// console.log(window);
+
+// window.document is the DOM (Document Object Model) which represents the HTML document loaded in the browser
+// console.log(window.document);
+
+// getElementById is a method of the document object which targets the element with the id "title"
+// console.log(document.getElementById("title"));
+
+// Differe between textContent, innerTex and innerHTML
+// texContent: It returns the text content of the element and its descendants. It does not parse HTML tags, so it returns the text as is.
+// innerText: It returns the visible text content of the element and its descendants. It does not include hidden elements and does not parse HTML tags. It returns the text as it is displayed on the page.
+// innerHTML: It returns the HTML content of the element, including any HTML tags. It parses the HTML and returns it as a string.
