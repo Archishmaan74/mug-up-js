@@ -94,3 +94,35 @@ for (let i = 0; i < 10; i++) {
 // It is more flexible and powerful than getElementsByClassName() as it allows you to use any CSS selector to target elements.
 // It is recommended to use this method instead of getElementsByClassName() as it is more modern and widely supported.
 // To convert this NodeList to an array, you can use the Array.from() method or the spread operator [...].
+
+// Array.from();
+// This method creates a new array from an array-like or iterable object.
+// It is useful for converting NodeLists, HTMLCollections, or other iterable objects into arrays.
+// It can also take a mapping function as a second argument to transform the elements of the array-like object into a new array.
+// It is a modern and widely supported method that is recommended to use instead of older methods like slice() or spread operator [...].
+
+// Array.of();
+// This method creates a new array with a variable number of arguments, regardless of the number or type of arguments passed to it.
+// It is useful for creating arrays with a specific number of elements or for creating arrays from a list of values.
+// It is a modern and widely supported method that is recommended to use instead of older methods like new Array() or Array.from().
+// It is also more flexible and powerful than the older methods as it allows you to create arrays with any number of elements and any type of values.
+
+// Difference between Array.from() and Array.of()
+// Array.from() creates a new array from an array-like or iterable object, while Array.of() creates a new array with a variable number of arguments.
+// Array.from() is useful for converting NodeLists, HTMLCollections, or other iterable objects into arrays, while Array.of() is useful for creating arrays with a specific number of elements or for creating arrays from a list of values.
+// Both methods are modern and widely supported and are recommended to use instead of older methods like new Array() or Array.from().
+// They are also more flexible and powerful than the older methods as they allow you to create arrays with any number of elements and any type of values.
+
+// firstElementChild vs lastElementChild
+// firstElementChild: It returns the first child element of the specified element.
+// If there are no child elements, it returns null.
+// It only returns element nodes, not text or comment nodes.
+
+// lastElementChild: It returns the last child element of the specified element.
+// If there are no child elements, it returns null.
+// It only returns element nodes, not text or comment nodes.
+
+// parentElement vs nextElementSibling vs previousElementSibling
+// parentElement: It returns the parent element of the specified element.
+// nextElementSibling: It returns the next sibling element of the specified element.
+// previousElementSibling: It returns the previous sibling element of the specified element.
