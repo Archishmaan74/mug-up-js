@@ -24,5 +24,8 @@
     days.forEach((item) => (item.style.color = "orange"));
     console.log(parent.firstElementChild);
     console.log(parent.lastElementChild);
+
+    console.log("NodeList: ", parent.childNodes); // this will give us all the child nodes including text nodes
+    console.log("HTMLCollection: ", parent.children); // this will give us only the child elements
   </script>
 </html>

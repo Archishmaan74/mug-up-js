@@ -126,3 +126,15 @@ for (let i = 0; i < 10; i++) {
 // parentElement: It returns the parent element of the specified element.
 // nextElementSibling: It returns the next sibling element of the specified element.
 // previousElementSibling: It returns the previous sibling element of the specified element.
+
+// NodeList vs HTMLCollection
+// NodeList: It is a collection of nodes that can be elements, text nodes, or comment nodes.
+// It is a static collection, meaning it does not update automatically when the document changes.
+// It can be created using methods like querySelectorAll() or getElementsByTagName().
+// It can be converted to an array using Array.from() or the spread operator [...].
+
+// HTMLCollection: It is a collection of HTML elements only.
+// It is a live collection, meaning it updates automatically when the document changes.
+// It can be created using methods like getElementsByClassName() or getElementsByTagName().
+// It can be converted to an array using Array.from() or the spread operator [...].
+// It is not recommended to use this method as it is not very flexible and does not return an array.
