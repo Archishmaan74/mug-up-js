@@ -1,4 +1,9 @@
 // arrays
+// Arrays are a collection of items that are stored in a single variable. \
+// They can hold multiple values of different data types, including numbers, strings, objects, and even other arrays.
+// Arrays are defined using square brackets [] and can be created using the Array constructor or array literal syntax.
+// They are mutable, meaning they can be changed after they are created.
+// They are also dynamic, meaning they can grow and shrink in size as needed.
 
 const myArr = [1, 2, 3, 4, 5];
 const myHeroes = ["Batman", "Superman", "Wonder Women"];
