@@ -23,6 +23,8 @@ const anotherString = gameName.slice(-4, 6);
 console.log(anotherString);
 
 // difference between slice and substring is that slice can take negative values
+// substring returns the part of the string between the two specified indices, or to the end of the string.
+// slice extracts a section of a string and returns it as a new string, without modifying the original string.
 
 const newStringOne = "  Archishmaan  ";
 console.log(newStringOne);
@@ -32,3 +34,5 @@ const url = "https://www.archishmaan.com/archishmaan%20upadhyaya";
 console.log(url.replace("%20", "-"));
 console.log(url.includes("archishmaan"));
 console.log(gameName.split("-"));
+
+// split is used to split a string into an array of substrings, and it takes a separator as an argument.
