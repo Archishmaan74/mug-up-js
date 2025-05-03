@@ -138,3 +138,27 @@ for (let i = 0; i < 10; i++) {
 // It can be created using methods like getElementsByClassName() or getElementsByTagName().
 // It can be converted to an array using Array.from() or the spread operator [...].
 // It is not recommended to use this method as it is not very flexible and does not return an array.
+
+// createElement vs createTextNode
+// createElement: It creates a new HTML element with the specified tag name.
+// It can be used to create any type of HTML element, including divs, spans, paragraphs, etc.
+// It returns an element node that can be appended to the document or manipulated using JavaScript.
+// It is a method of the document object and is widely supported in modern browsers.
+// It is useful for creating elements that can be styled or manipulated using JavaScript.
+
+// createTextNode: It creates a new text node with the specified text content.
+// It can be used to create text nodes that can be appended to the document or manipulated using JavaScript.
+// It returns a text node that can be appended to the document or manipulated using JavaScript.
+// It is a method of the document object and is widely supported in modern browsers.
+// It is useful for creating text nodes that can be appended to elements or used as content for elements.
+
+// appendChild()
+// This method appends a child node to the specified parent node.
+// It can be used to add elements, text nodes, or comment nodes to the document.
+// It is a method of the parent node and is widely supported in modern browsers.
+// It is useful for adding elements to the document or manipulating the document structure.
+
+// setAttribute vs getAttribute vs removeAttribute
+// setAttribute: It sets the value of the specified attribute on the specified element.
+// getAttribute: It returns the value of the specified attribute on the specified element.
+// removeAttribute: It removes the specified attribute from the specified element.
