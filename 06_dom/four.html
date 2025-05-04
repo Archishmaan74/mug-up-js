@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Revision</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    // Add
+    const addLanguage = (langName) => {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    };
+
+    addLanguage("Java");
+    addLanguage("Typescript");
+
+    const addOptimLanguage = (langName) => {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    };
+
+    addOptimLanguage("Python");
+    addOptimLanguage("C++");
+
+    //Edit
+
+    const secondElement = document.querySelector("li:nth-child(2)");
+    const newLi = document.createElement("li");
+    newLi.textContent = "Mojo";
+    secondElement.replaceWith(newLi);
+  </script>
+</html>
