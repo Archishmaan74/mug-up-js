@@ -1,7 +1,9 @@
+// function declaration or function statement
 function addTwoNumbers(num1, num2) {
   return num1 + num2;
 }
 
+// function expression
 const result = addTwoNumbers(4, 4);
 console.log("Result:", result);
 

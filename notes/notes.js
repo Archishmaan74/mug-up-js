@@ -62,6 +62,24 @@ for (let i = 0; i < 10; i++) {
   n2 = nxt;
 }
 
+// Difference between function declaration, function expression and arrow function
+// Function Declaration: It is a named function that can be called before or after it is defined.
+// It is hoisted to the top of the scope, meaning it can be called before it is defined in the code.
+// It is defined using the function keyword followed by the function name and parentheses.
+// Example: function add(a, b) { return a + b; }
+
+// Function Expression: It is an anonymous function that is assigned to a variable.
+// It is not hoisted to the top of the scope, meaning it cannot be called before it is defined in the code.
+// It is defined using the function keyword followed by parentheses and can be assigned to a variable or passed as an argument to another function.
+// Example: const add = function(a, b) { return a + b; }
+
+// Arrow Function: It is a shorthand syntax for writing function expressions using the arrow (=>) syntax.
+// It is not hoisted to the top of the scope, meaning it cannot be called before it is defined in the code.
+// It does not have its own this context, meaning it inherits the this context from the surrounding scope.
+// It is defined using the arrow (=>) syntax and can be assigned to a variable or passed as an argument to another function.
+// Example: const add = (a, b) => a + b;
+
+//////////////////////////////////////////////////////     DOM     ///////////////////////////////////////////////////////////
 // window is the global object in the browser
 // console.log(window);
 
@@ -71,7 +89,7 @@ for (let i = 0; i < 10; i++) {
 // getElementById is a method of the document object which targets the element with the id "title"
 // console.log(document.getElementById("title"));
 
-// Differe between textContent, innerTex and innerHTML
+// Difference between textContent, innerText and innerHTML
 // texContent: It returns the text content of the element and its descendants. It does not parse HTML tags, so it returns the text as is.
 // innerText: It returns the visible text content of the element and its descendants. It does not include hidden elements and does not parse HTML tags. It returns the text as it is displayed on the page.
 // innerHTML: It returns the HTML content of the element, including any HTML tags. It parses the HTML and returns it as a string.
@@ -144,13 +162,11 @@ for (let i = 0; i < 10; i++) {
 // It can be used to create any type of HTML element, including divs, spans, paragraphs, etc.
 // It returns an element node that can be appended to the document or manipulated using JavaScript.
 // It is a method of the document object and is widely supported in modern browsers.
-// It is useful for creating elements that can be styled or manipulated using JavaScript.
 
 // createTextNode: It creates a new text node with the specified text content.
 // It can be used to create text nodes that can be appended to the document or manipulated using JavaScript.
 // It returns a text node that can be appended to the document or manipulated using JavaScript.
 // It is a method of the document object and is widely supported in modern browsers.
-// It is useful for creating text nodes that can be appended to elements or used as content for elements.
 
 // appendChild()
 // This method appends a child node to the specified parent node.
