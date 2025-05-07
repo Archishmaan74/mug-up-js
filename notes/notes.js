@@ -178,3 +178,7 @@ for (let i = 0; i < 10; i++) {
 // setAttribute: It sets the value of the specified attribute on the specified element.
 // getAttribute: It returns the value of the specified attribute on the specified element.
 // removeAttribute: It removes the specified attribute from the specified element.
+
+// classList vs className
+// classList: It is a property of the element that returns a DOMTokenList of the class names of the element.
+// className: It is a property of the element that returns a string of the class names of the element.
