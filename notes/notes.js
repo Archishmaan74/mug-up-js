@@ -178,3 +178,12 @@ for (let i = 0; i < 10; i++) {
 // setAttribute: It sets the value of the specified attribute on the specified element.
 // getAttribute: It returns the value of the specified attribute on the specified element.
 // removeAttribute: It removes the specified attribute from the specified element.
+
+// Capturing mode in event bubbling
+// Event bubbling is a way of event propagation in the DOM.
+// It occurs when an event is triggered on an element and then propagates up to its parent elements.
+// In capturing mode, the event starts from the root of the DOM and propagates down to the target element.
+// In bubbling mode, the event starts from the target element and propagates up to the root of the DOM.
+// Event bubbling is the default mode of event propagation in the DOM.
+// Event capturing is less commonly used but can be useful in certain situations like when you want to handle events at a higher level in the DOM hierarchy.
+// Event delegation is a technique that allows you to attach a single event listener to a parent element instead of attaching multiple event listeners to child elements.
