@@ -192,3 +192,17 @@ for (let i = 0; i < 10; i++) {
 // This method stops the event from propagating to parent elements.
 // It can be used to prevent event bubbling or capturing.
 // It is useful for preventing multiple event listeners from being triggered for the same event.
+
+// preventDefault
+// This method prevents the default action of the event from occurring.
+// It can be used to prevent the default behavior of form submission, link navigation, etc.
+// It is useful for preventing the default behavior of an event and allowing you to handle the event in a custom way.
+
+// parentNode vs parentElement
+// parentNode: It returns the parent node of the specified element.
+// It can be any type of node, including element nodes, text nodes, or comment nodes.
+// It is a property of the element node and is widely supported in modern browsers.
+// parentElement: It returns the parent element of the specified element.
+// It only returns element nodes, not text or comment nodes.
+// It is a property of the element node and is widely supported in modern browsers.
+// It is useful for getting the parent element of an element or manipulating the document structure.
