@@ -206,3 +206,66 @@ for (let i = 0; i < 10; i++) {
 // It only returns element nodes, not text or comment nodes.
 // It is a property of the element node and is widely supported in modern browsers.
 // It is useful for getting the parent element of an element or manipulating the document structure.
+
+////////////////////////////////////////////////        EVENT LOOP        /////////////////////////////////////////////////////
+
+// The event loop is a mechanism that allows JavaScript to perform non-blocking I/O operations.
+// It is a single-threaded model that uses an event queue to handle asynchronous operations.
+// The event loop continuously checks the event queue for any pending events and executes them in the order they were added to the queue.
+// It allows JavaScript to handle multiple tasks concurrently without blocking the main thread.
+// Synchonous code is executed first, followed by asynchronous code.
+
+// Example of event loop
+console.log("Start");
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+console.log("End");
+// Output:
+// Start
+// End
+// Timeout
+
+// In this example, the synchronous code (console.log("Start") and console.log("End")) is executed first.
+// Then, the asynchronous code (setTimeout) is executed after the synchronous code has completed.
+
+// JS Engine
+// The JS engine is a program that executes JavaScript code.
+// It consists of Memory Heap and Call Stack.
+// The memory heap is a region of memory used for dynamic memory allocation.
+// The call stack is a data structure that stores the execution context of the currently executing function.
+// The call stack is used to keep track of function calls and their execution context.
+// The call stack follows the Last In First Out (LIFO) principle, meaning the last function called is the first one to be.
+
+// Web APIs
+// The web APIs are a set of APIs provided by the browser that allow JavaScript to interact with the browser and the DOM.
+// They provide functionality for handling events, making network requests, manipulating the DOM, and more.
+// The web APIs are not part of the JavaScript language itself, but they are provided by the browser environment.
+// The web APIs are asynchronous and use callbacks, promises, or async/await to handle asynchronous operations.
+// The web APIs are executed in the background and do not block the main thread.
+
+// Task Queue
+// The task queue is a queue that stores tasks that are ready.
+// It is used to handle asynchronous operations and events.
+// The task queue is also known as the callback queue or event queue.
+// The task queue follows the First In First Out (FIFO) principle, meaning the first task added to the queue is the first one to be.
+// The event loop continuously checks the task queue for any pending tasks and executes them in the order they were added to the queue.
+// The event loop checks the call stack and the task queue.
+// If the call stack is empty, it takes the first task from the task queue and pushes it onto the call stack for execution.
+// This process continues until all tasks in the task queue have been executed.
+// The event loop allows JavaScript to handle multiple tasks concurrently without blocking the main thread.
+// It allows JavaScript to perform non-blocking I/O operations and handle events asynchronously.
+
+// Macro Task Queue vs Micro Task Queue
+
+// The macro task queue is a queue that stores tasks that are ready to be executed.
+// It is used to handle asynchronous operations and events.
+// The macro task queue is also known as the task queue or callback queue.
+// It is used for tasks like setTimeout, setInterval, and I/O operations.
+// It has lower priority than the micro task queue.
+
+// The micro task queue is a queue that stores tasks that are ready to be executed
+// It is used to handle promises and other micro tasks.
+// The micro task queue is also known as the job queue or next tick queue.
+// It is used for tasks like promises, mutation observers, and process.nextTick.
+// It has higher priority than the macro task queue.
