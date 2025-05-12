@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Loop</title>
+  </head>
+  <body>
+    <h1>H1 heading check</h1>
+    <div>
+      <span> <button id="start">Start Timeout</button></span>
+      <span> <button id="stop">Stop Timeout</button></span>
+    </div>
+  </body>
+  <script>
+    let startTimeout;
+    const timeout = () => {
+      console.log("Timeout!");
+      document.querySelector("h1").innerHTML = "Archishmaan";
+    };
+
+    document.querySelector("#start").addEventListener(
+      "click",
+      (e) => {
+        startTimeout = setTimeout(timeout, 2000);
+        console.log("Initiated Timeout!");
+      },
+      false
+    );
+    document.querySelector("#stop").addEventListener(
+      "click",
+      (e) => {
+        clearTimeout(startTimeout);
+        console.log("Cleared Timeout!");
+      },
+      false
+    );
+  </script>
+</html>
