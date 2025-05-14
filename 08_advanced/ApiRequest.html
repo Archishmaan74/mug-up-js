@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid white;
+        padding: 8px;
+        border-collapse: collapse;
+      }
+    </style>
+
+    <title>API</title>
+  </head>
+  <body style="background-color: #212121; color: white">
+    <div>
+      <h1>Different breeds of dogs</h1>
+    </div>
+    <div>
+      <table id="breedTable">
+        <tr>
+          <th>Breed Name</th>
+          <th>Max Life</th>
+          <th>Description</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script>
+    const requestURL = "https://dogapi.dog/api/v2/breeds";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestURL);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const response = JSON.parse(xhr.responseText);
+        const breeds = response.data;
+        const table = document.getElementById("breedTable");
+
+        breeds.forEach((breed) => {
+          const row = document.createElement("tr");
+
+          const nameCell = document.createElement("td");
+          nameCell.textContent = breed.attributes.name;
+
+          const lifeCell = document.createElement("td");
+          lifeCell.textContent = breed.attributes.life?.max || "N/A";
+
+          const descCell = document.createElement("td");
+          descCell.textContent =
+            breed.attributes.description || "No description";
+
+          row.appendChild(nameCell);
+          row.appendChild(lifeCell);
+          row.appendChild(descCell);
+
+          table.appendChild(row);
+        });
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
