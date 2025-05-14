@@ -272,6 +272,37 @@ console.log("End");
 
 ///////////////////////////////////////////////////// API //////////////////////////////////////////////////////
 
+// What is API?
+// API (Application Programming Interface) is a set of rules and protocols that allows different software applications to communicate with each other.
+// It defines the methods and data formats that applications can use to request and exchange information.
+// APIs are used to enable communication between different software components, such as web applications, mobile applications, and servers.
+// They allow developers to access the functionality of other applications or services without having to understand their internal workings.
+
+// HTTP Request methods
+// GET: It is used to retrieve data from a server.
+// POST: It is used to send data to a server.
+// PUT: It is used to update data on a server.
+// DELETE: It is used to delete data from a server.
+// PATCH: It is used to apply partial modifications to a resource on a server.
+
+// Difference between GET and POST
+// GET: It is used to retrieve data from a server.
+// It appends the data to the URL as query parameters.
+// It is idempotent, meaning that multiple identical requests will have the same effect as a single request.
+// It is cached by the browser and can be bookmarked.
+// POST: It is used to send data to a server.
+// It sends the data in the request body.
+// It is not idempotent, meaning that multiple identical requests may have different effects.
+// It is not cached by the browser and cannot be bookmarked.
+
+// Difference between PUT and PATCH
+// PUT: It is used to update a resource on a server.
+// It replaces the entire resource with the new data provided in the request body.
+// It is idempotent, meaning that multiple identical requests will have the same effect as a single request.
+// PATCH: It is used to apply partial modifications to a resource on a server.
+// It only updates the specified fields in the resource with the new data provided in the request body.
+// It is not idempotent, meaning that multiple identical requests may have different effects.
+
 // XHR (XMLHttpRequest)
 // It is a built-in JavaScript object that allows you to make HTTP requests to a server.
 // It is used to send and receive data from a server asynchronously.
