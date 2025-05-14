@@ -322,3 +322,36 @@ console.log("End");
 // 200: OK - The request was successful and the response is ready.
 // 404: NOT FOUND - The requested resource was not found on the server.
 // 500: INTERNAL SERVER ERROR - The server encountered an error while processing the request.
+
+// Promise
+// A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+// It is a way to handle asynchronous operations in JavaScript.
+// A promise can be in one of three states:
+// 1. Pending: The initial state, neither fulfilled nor rejected.
+// 2. Fulfilled: The operation completed successfully and the promise has a resulting value.
+// 3. Rejected: The operation failed and the promise has a reason for the failure.
+// It is a modern and widely supported way to handle asynchronous operations in JavaScript.
+// It is more flexible and powerful than the older methods like callbacks or XHR.
+
+// .then(), .catch(), and .finally()
+// .then(): It is a method of the promise object that is called when the promise is fulfilled.
+// It takes a callback function as an argument that is executed when the promise is fulfilled.
+// It can also take a second callback function as an argument that is executed when the promise is rejected.
+// It returns a new promise that resolves to the return value of the callback function.
+
+// .catch(): It is a method of the promise object that is called when the promise is rejected.
+// It takes a callback function as an argument that is executed when the promise is rejected.
+// It returns a new promise that resolves to the return value of the callback function.
+// It is used to handle errors in the promise chain.
+
+// .finally(): It is a method of the promise object that is called when the promise is settled (fulfilled or rejected).
+// It takes a callback function as an argument that is executed when the promise is settled.
+// It does not take any arguments and does not return a value.
+// It is used to perform cleanup actions or to execute code that should run regardless of the promise's outcome.
+
+// async/await
+// async/await is a modern way to handle asynchronous operations in JavaScript.
+// It is built on top of promises and provides a more readable and concise syntax for handling asynchronous operations.
+// It allows you to write asynchronous code that looks and behaves like synchronous code.
+// You can use async/await to handle promises in a more readable and concise way.
+// try/catch blocks can be used to handle errors in async/await.
