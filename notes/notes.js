@@ -269,3 +269,25 @@ console.log("End");
 // The micro task queue is also known as the job queue or next tick queue.
 // It is used for tasks like promises, mutation observers, and process.nextTick.
 // It has higher priority than the macro task queue.
+
+///////////////////////////////////////////////////// API //////////////////////////////////////////////////////
+
+// XHR (XMLHttpRequest)
+// It is a built-in JavaScript object that allows you to make HTTP requests to a server.
+// It is used to send and receive data from a server asynchronously.
+// It is a legacy API and has been replaced by the Fetch API.
+// It is not recommended to use this API as it is not very flexible and does not support modern features like promises or async/await.
+// It is also not very user-friendly and requires a lot of boilerplate code to set up.
+// Its methods include open(), send(), setRequestHeader(), getResponseHeader(), and getAllResponseHeaders().
+// readyState: It is a property of the XMLHttpRequest object that indicates the current state of the request.
+// It can have the following values:
+// 0: UNSENT - The request has been created but not yet opened.
+// 1: OPENED - The request has been opened but not yet sent.
+// 2: HEADERS_RECEIVED - The request has been sent and the headers have been received.
+// 3: LOADING - The response is being received.
+// 4: DONE - The request has completed and the response is ready.
+// status: It is a property of the XMLHttpRequest object that indicates the HTTP status code of the response.
+// It can have the following values:
+// 200: OK - The request was successful and the response is ready.
+// 404: NOT FOUND - The requested resource was not found on the server.
+// 500: INTERNAL SERVER ERROR - The server encountered an error while processing the request.
