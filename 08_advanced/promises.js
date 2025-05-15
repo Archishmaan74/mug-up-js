@@ -80,3 +80,27 @@ const consumePromiseFive = async () => {
 };
 
 consumePromiseFive();
+
+const getallUsers = async () => {
+  try {
+    const response = await fetch("https://dogapi.dog/api/v2/breeds");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("E: ", error);
+  }
+};
+
+getallUsers();
+
+////////////////////////////// then-catch /////////////////////////////
+fetch("https://dogapi.dog/api/v2/breeds")
+  .then((data) => {
+    return data.json();
+  })
+  .then((breed) => {
+    console.log(breed);
+  })
+  .catch((error) => {
+    console.log("E :", error);
+  });
