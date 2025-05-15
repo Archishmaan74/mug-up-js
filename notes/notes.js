@@ -338,6 +338,8 @@ console.log("End");
 // It takes a callback function as an argument that is executed when the promise is fulfilled.
 // It can also take a second callback function as an argument that is executed when the promise is rejected.
 // It returns a new promise that resolves to the return value of the callback function.
+// Not good for complex logics.
+// Functional chaining can lead to callback hell.
 
 // .catch(): It is a method of the promise object that is called when the promise is rejected.
 // It takes a callback function as an argument that is executed when the promise is rejected.
@@ -355,3 +357,11 @@ console.log("End");
 // It allows you to write asynchronous code that looks and behaves like synchronous code.
 // You can use async/await to handle promises in a more readable and concise way.
 // try/catch blocks can be used to handle errors in async/await.
+
+// Try/Catch
+// It is a way to handle errors in JavaScript.
+// It allows you to catch and handle errors that occur in your code.
+// It consists of a try block that contains the code that may throw an error and a catch block that contains the code to handle the error.
+// It provides cleaner and more readable error handling than using callbacks or promises.
+// Better for complex logic and error handling.
+// Not compatible with older browsers.
