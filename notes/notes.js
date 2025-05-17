@@ -371,3 +371,14 @@ console.log("End");
 // It returns true if the object is an instance of the constructor function or class, and false otherwise.
 // It is used to check the type of an object and to determine if it is an instance of a specific class or constructor function.
 // It is a useful operator for checking the type of an object and for implementing polymorphism in JavaScript.
+
+// constructor
+// It is a special method of a class that is called when an object is created from the class.
+// It is used to initialize the properties of the object and to perform any setup required for the object.
+// It is a special method that is called automatically when an object is created from the class.
+
+// prototype
+// It is a built-in property of JavaScript objects that allows you to add properties and methods to an object.
+// It is used to implement inheritance in JavaScript.
+// It allows you to create a prototype chain, where an object can inherit properties and methods from another object.
+// It is a powerful feature of JavaScript that allows you to create complex object hierarchies and to share properties and methods between objects.
