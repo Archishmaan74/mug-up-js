@@ -365,3 +365,9 @@ console.log("End");
 // It provides cleaner and more readable error handling than using callbacks or promises.
 // Better for complex logic and error handling.
 // Not compatible with older browsers.
+
+// instanceof
+// It is an operator that checks if an object is an instance of a specific constructor function or class.
+// It returns true if the object is an instance of the constructor function or class, and false otherwise.
+// It is used to check the type of an object and to determine if it is an instance of a specific class or constructor function.
+// It is a useful operator for checking the type of an object and for implementing polymorphism in JavaScript.
