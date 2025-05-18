@@ -381,4 +381,17 @@ console.log("End");
 // It is a built-in property of JavaScript objects that allows you to add properties and methods to an object.
 // It is used to implement inheritance in JavaScript.
 // It allows you to create a prototype chain, where an object can inherit properties and methods from another object.
-// It is a powerful feature of JavaScript that allows you to create complex object hierarchies and to share properties and methods between objects.
+// Basically, it is a way in which if desired values are not found in the object, it will look for the values in the prototype, which is the parent object.
+// Example:
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+// }
+// Person.prototype.greet = function () {
+//   console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+// };
+// const person1 = new Person("John", 30);
+// person1.greet(); // Output: Hello, my name is John and I am 30 years old.
+// This above example shows how to create a constructor function and add a method to its prototype.
+// The prototype property is a built-in property of JavaScript objects that allows you to add properties and methods to an object.
