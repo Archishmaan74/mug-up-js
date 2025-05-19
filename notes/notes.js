@@ -90,7 +90,7 @@ for (let i = 0; i < 10; i++) {
 // console.log(document.getElementById("title"));
 
 // Difference between textContent, innerText and innerHTML
-// texContent: It returns the text content of the element and its descendants. It does not parse HTML tags, so it returns the text as is.
+// textContent: It returns the text content of the element and its descendants. It does not parse HTML tags, so it returns the text as is.
 // innerText: It returns the visible text content of the element and its descendants. It does not include hidden elements and does not parse HTML tags. It returns the text as it is displayed on the page.
 // innerHTML: It returns the HTML content of the element, including any HTML tags. It parses the HTML and returns it as a string.
 
