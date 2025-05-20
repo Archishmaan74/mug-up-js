@@ -407,3 +407,11 @@ console.log("End");
 // this
 // The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
 // Most typically, it is used in object methods, where this refers to the object that the method is attached to, thus allowing the same method to be reused on different objects.
+
+// constructor
+// The constructor method is a special method of a class for creating and initializing an object instance of that class.
+// There are some additional syntax restrictions:
+// A class method called constructor cannot be a getter, setter, async, or generator.
+// A class cannot have more than one constructor method.
+// If you don't provide your own constructor, then a default constructor will be supplied for you.
+// If your class is a derived class, the default constructor calls the parent constructor, passing along any arguments that were provided.
