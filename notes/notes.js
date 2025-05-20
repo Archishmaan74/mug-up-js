@@ -366,6 +366,8 @@ console.log("End");
 // Better for complex logic and error handling.
 // Not compatible with older browsers.
 
+//////////////////////////////                        CLASSES & OOP                     /////////////////////////////////////////////
+
 // instanceof
 // It is an operator that checks if an object is an instance of a specific constructor function or class.
 // It returns true if the object is an instance of the constructor function or class, and false otherwise.
@@ -395,3 +397,13 @@ console.log("End");
 // person1.greet(); // Output: Hello, my name is John and I am 30 years old.
 // This above example shows how to create a constructor function and add a method to its prototype.
 // The prototype property is a built-in property of JavaScript objects that allows you to add properties and methods to an object.
+
+// call
+// Normally, when calling a function, the value of this inside the function is the object that the function was accessed on.
+// With call(), you can assign an arbitrary value as this when calling an existing function, without first attaching the function to the object as a property.
+// This allows you to use methods of one object as generic utility functions.
+// Note: This function is almost identical to apply(), except that the function arguments are passed to call() individually as a list, while for apply() they are combined in one object, typically an array — for example, func.call(this, "eat", "bananas") vs. func.apply(this, ["eat", "bananas"]).
+
+// this
+// The this keyword refers to the context where a piece of code, such as a function's body, is supposed to run.
+// Most typically, it is used in object methods, where this refers to the object that the method is attached to, thus allowing the same method to be reused on different objects.
