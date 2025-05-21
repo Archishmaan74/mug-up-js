@@ -415,3 +415,10 @@ console.log("End");
 // A class cannot have more than one constructor method.
 // If you don't provide your own constructor, then a default constructor will be supplied for you.
 // If your class is a derived class, the default constructor calls the parent constructor, passing along any arguments that were provided.
+
+// inheritance
+// In programming, inheritance refers to passing down characteristics from a parent to a child so that a new piece of code can reuse and build upon the features of an existing one.
+// JavaScript implements inheritance by using objects. Each object has an internal link to another object called its prototype.
+// That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+// By definition, null has no prototype and acts as the final link in this prototype chain.
+// It is possible to mutate any member of the prototype chain or even swap out the prototype at runtime, so concepts like static dispatching do not exist in JavaScript.
