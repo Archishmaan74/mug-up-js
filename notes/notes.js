@@ -422,3 +422,8 @@ console.log("End");
 // That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
 // By definition, null has no prototype and acts as the final link in this prototype chain.
 // It is possible to mutate any member of the prototype chain or even swap out the prototype at runtime, so concepts like static dispatching do not exist in JavaScript.
+
+// instanceof
+// The instanceof operator tests to see if the prototype property of a constructor appears anywhere in the prototype chain of an object.
+// The return value is a boolean value.
+// Its behavior can be customized with Symbol.hasInstance.
