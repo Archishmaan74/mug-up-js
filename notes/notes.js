@@ -427,3 +427,9 @@ console.log("End");
 // The instanceof operator tests to see if the prototype property of a constructor appears anywhere in the prototype chain of an object.
 // The return value is a boolean value.
 // Its behavior can be customized with Symbol.hasInstance.
+
+// static
+// The static keyword defines a static method or field for a class, or a static initialization block (see the link for more information about this usage).
+// Static properties cannot be directly accessed on instances of the class.
+// Instead, they're accessed on the class itself.
+// Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
