@@ -433,3 +433,21 @@ console.log("End");
 // Static properties cannot be directly accessed on instances of the class.
 // Instead, they're accessed on the class itself.
 // Static methods are often utility functions, such as functions to create or clone objects, whereas static properties are useful for caches, fixed-configuration, or any other data you don't need to be replicated across instances.
+
+// .bind()
+// .bind() is a method that locks the value of this inside a function, so that no matter how or where the function is called, it uses the this you told it to.
+// Example:
+// const module = {
+//   x: 42,
+//   getX: function () {
+//     return this.x;
+//   },
+// };
+
+// const unboundGetX = module.getX;
+// console.log(unboundGetX()); // The function gets invoked at the global scope
+// // Expected output: undefined
+
+// const boundGetX = unboundGetX.bind(module);
+// console.log(boundGetX());
+// // Expected output: 42
