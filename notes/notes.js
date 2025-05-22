@@ -464,3 +464,10 @@ console.log("End");
 // .bind():
 // .bind() doesn't call the function immediately. It returns a new function with a set this value and optional arguments.
 // Example: const newFunc = func.bind(thisArg, arg1)
+
+// getOwnPropertyDescriptor()
+// The Object.getOwnPropertyDescriptor() static method returns an object describing the configuration of a specific property on a given object (that is, one directly present on an object and not in the object's prototype chain).
+// The object returned is mutable but mutating it has no effect on the original property's configuration.
+
+// defineProperty()
+// The Object.defineProperty() static method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
