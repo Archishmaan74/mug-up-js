@@ -451,3 +451,16 @@ console.log("End");
 // const boundGetX = unboundGetX.bind(module);
 // console.log(boundGetX());
 // // Expected output: 42
+
+// .call() vs .apply() vs .bind()
+// .call():
+// .call() calls a function immediately with a given this value and arguments passed one by one.
+// Example: func.call(thisArg, arg1, arg2)
+
+// .apply():
+// .apply is similar to .call, but it takes arguments as an array instead of one by one.
+// Example: func.apply(thisArg, [arg1, arg2])
+
+// .bind():
+// .bind() doesn't call the function immediately. It returns a new function with a set this value and optional arguments.
+// Example: const newFunc = func.bind(thisArg, arg1)
