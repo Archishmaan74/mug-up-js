@@ -471,3 +471,18 @@ console.log("End");
 
 // defineProperty()
 // The Object.defineProperty() static method defines a new property directly on an object, or modifies an existing property on an object, and returns the object.
+
+// getters and setters
+// getters
+// The get syntax binds an object property to a function that will be called when that property is looked up. It can also be used in classes.
+
+// setters
+// The set syntax binds an object property to a function to be called when there is an attempt to set that property. It can also be used in classes.
+
+// Use Getters and Setters when:
+// You want to keep a value private (not let others change it directly)
+// You want to validate or modify a value before saving or showing it
+
+// Think of it like a "Gatekeeper"
+// getter: Controls what is returned when you read the value.
+// setter: Checks or transforms before setting the value.
