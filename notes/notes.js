@@ -486,3 +486,30 @@ console.log("End");
 // Think of it like a "Gatekeeper"
 // getter: Controls what is returned when you read the value.
 // setter: Checks or transforms before setting the value.
+
+////////////////////////////////////         MOST IMP         ////////////////////////////////////
+
+// Q. What is hoisting?
+
+// In JavaScript, hoisting is the behavior during the creation phase of the Execution Context, where variable and function declarations are moved to the top of their scope — either the global scope or the function scope.
+// When JavaScript code runs, the Global Execution Context (GEC) is created in two phases:
+
+// Creation Phase:
+// A memory space is allocated for all variables and functions.
+// var variables are hoisted and initialized as undefined.
+// let and const are hoisted but not initialized — they’re in the Temporal Dead Zone (TDZ) until their line of declaration is executed.
+// Function declarations are hoisted with their full definitions, so they can be invoked before they're written in code.
+
+// Execution Phase:
+// The code is executed line by line, with variables being assigned actual values.
+
+// Q. What is a Temporal Dead Zone (TDZ)?
+
+// The Temporal Dead Zone (TDZ) is the period between the start of the scope (when a variable is hoisted) and the moment the variable is initialized.
+// During this time, trying to access the variable will result in a ReferenceError.
+// This applies to variables declared with let or const.
+
+// Q. What are closures?
+
+// A closure is a function that remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
+// This means the closure can still use the variables from its outer function, even when called outside of that function.
