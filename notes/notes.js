@@ -513,3 +513,7 @@ console.log("End");
 
 // A closure is a function that remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
+
+// useCallback vs useEffect()
+// useCallback() helps optimize performance by avoiding unnecessary re-creations of functions, especially when passing callbacks to child components.
+// useEffect() is useful for handling side effects in functional components, such as API calls, timers, or DOM manipulations.
