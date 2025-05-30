@@ -517,3 +517,9 @@ console.log("End");
 // useCallback vs useEffect()
 // useCallback() helps optimize performance by avoiding unnecessary re-creations of functions, especially when passing callbacks to child components.
 // useEffect() is useful for handling side effects in functional components, such as API calls, timers, or DOM manipulations.
+
+// useRef()
+// useRef() is a React hook that lets us store a value or get a reference to a DOM element, like an input box.
+// It doesn't cause the component to re-render when the value changes.
+// I mainly use it to handle things like focusing an input or copying text.
+// It's helpful when we want to keep or access something without refreshing the UI
