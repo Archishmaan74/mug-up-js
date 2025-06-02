@@ -511,7 +511,7 @@ console.log("End");
 
 // Q. What are closures?
 
-// A closure is a function that remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
+// A closure is a feature of JS which states when a function remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
 
 // useCallback vs useEffect()
@@ -521,7 +521,7 @@ console.log("End");
 // useRef()
 // useRef() is a React hook that lets us store a value or get a reference to a DOM element, like an input box.
 // It doesn't cause the component to re-render when the value changes.
-// I mainly use it to handle things like focusing an input or copying text.
+// It is mainly used to handle things like focusing an input or copying text.
 // It's helpful when we want to keep or access something without refreshing the UI
 
 // useId()
