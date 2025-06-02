@@ -523,3 +523,9 @@ console.log("End");
 // It doesn't cause the component to re-render when the value changes.
 // I mainly use it to handle things like focusing an input or copying text.
 // It's helpful when we want to keep or access something without refreshing the UI
+
+// useId()
+// The useId() hook in React generates a unique ID that remains constant across re-renders.
+// It's mainly used for accessibility attributes like id, htmlFor, or aria tags to ensure unique associations.
+// It's helpful when rendering multiple components that need unique identifiers.
+// This hook is available from React 18 onwards.
