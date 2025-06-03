@@ -529,3 +529,15 @@ console.log("End");
 // It's mainly used for accessibility attributes like id, htmlFor, or aria tags to ensure unique associations.
 // It's helpful when rendering multiple components that need unique identifiers.
 // This hook is available from React 18 onwards.
+
+// useParams()
+// It is used to get the dynamic part of the URL in a React Router app.
+// For example, if your route is /user/:id, useParams() can give you the id value.
+// It helps you read things from the URL without passing props manually.
+// This is useful when you want to load data based on a specific ID or name in the URL.
+
+// useLoaderData()
+// It is used to get data that was loaded by a loader function before the page renders.
+// You define a loader for a route, fetch data inside it, and useLoaderData() lets you use it in the component.
+// This keeps your component clean, since fetching is done outside.
+// It also ensures the page shows up only after the required data is ready.
