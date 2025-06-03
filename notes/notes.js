@@ -533,11 +533,11 @@ console.log("End");
 // useParams()
 // It is used to get the dynamic part of the URL in a React Router app.
 // For example, if your route is /user/:id, useParams() can give you the id value.
-// It helps you read things from the URL without passing props manually.
-// This is useful when you want to load data based on a specific ID or name in the URL.
+// It helps us to read things from the URL without passing props manually.
+// This is useful when we want to load data based on a specific ID or name in the URL.
 
 // useLoaderData()
 // It is used to get data that was loaded by a loader function before the page renders.
-// You define a loader for a route, fetch data inside it, and useLoaderData() lets you use it in the component.
-// This keeps your component clean, since fetching is done outside.
+// We define a loader for a route, fetch data inside it, and useLoaderData() lets us use it in the component.
+// This keeps our component clean, since fetching is done outside.
 // It also ensures the page shows up only after the required data is ready.
