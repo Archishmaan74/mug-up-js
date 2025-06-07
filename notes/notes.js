@@ -548,3 +548,14 @@ console.log("End");
 // We define a loader for a route, fetch data inside it, and useLoaderData() lets us use it in the component.
 // This keeps our component clean, since fetching is done outside.
 // It also ensures the page shows up only after the required data is ready.
+
+/////////////////////////////////////          Global State          //////////////////////////////////////////////
+
+// Context API
+// The Context API in React helps you share data between components without passing props manually at every level.
+// It’s useful when you have global data like user info, themes, or language settings.
+// First, you create a context using createContext.
+// Then, you wrap your component tree with a Provider and pass the data you want to share.
+// Any child component can access that data using the useContext hook.
+// This makes your code cleaner and easier to manage.
+// It’s a great way to avoid “prop drilling” when passing data deeply through components.
