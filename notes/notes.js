@@ -514,6 +514,13 @@ console.log("End");
 // A closure is a feature of JS which states when a function remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
 
+// useEffect()
+// The useEffect hook in React lets you run code after your component has rendered, like fetching data or updating the page title.
+// It’s useful for tasks that happen outside the normal flow of rendering, called side effects.
+// At the end of useEffect, you can add a dependencies array to control when the code runs.
+// If the values in that array change, the effect runs again.
+// If the array is empty ([]), the effect runs only once when the component first loads.
+
 // useCallback vs useEffect()
 // useCallback() helps optimize performance by avoiding unnecessary re-creations of functions, especially when passing callbacks to child components.
 // useEffect() is useful for handling side effects in functional components, such as API calls, timers, or DOM manipulations.
