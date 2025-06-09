@@ -559,3 +559,25 @@ console.log("End");
 // Any child component can access that data using the useContext hook.
 // This makes your code cleaner and easier to manage.
 // It’s a great way to avoid “prop drilling” when passing data deeply through components.
+
+// RTK (Redux Tool Kit)
+// Redux Toolkit is the modern and easy way to write Redux code. It helps you avoid:
+// 1. Writing too much boilerplate (actions, reducers, types separately)
+// 2. Mistakes in updating state
+// 3. Complex configuration
+// 4. It makes Redux simpler and faster to use.
+
+// Term	                               What It Means (Simple)                         	            Real-Life Analogy
+// state	              The current data you store and share across components	           The memory or current page in your diary
+// action	                     A message describing what change you want	                    "Hey! I want to add a todo" note
+// reducer	             A function that updates the state based on the action	               A diary editor updating the page
+// dispatch	                   The way to send an action to the reducer	                   Giving the "add todo" note to the editor
+// store	                     Where all the data (state) lives in Redux	                      Your actual diary or notebook
+// slice	               A small piece of the store for a specific feature (like todos)	     A section in your diary for todos only
+
+// RTK Checklist
+// createSlice() to write state, actions & reducer
+// useDispatch() in component to send action
+// useSelector() to read data from the store
+// configureStore() to set up Redux store
+// Wrap <App /> in <Provider store={...}></Provider>
