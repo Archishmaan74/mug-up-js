@@ -581,3 +581,12 @@ console.log("End");
 // useSelector() to read data from the store
 // configureStore() to set up Redux store
 // Wrap <App /> in <Provider store={...}></Provider>
+
+///////////////////////////////////////////////     JS VS TS     ///////////////////////////////////////////
+
+// JavaScript (JS) and TypeScript (TS) are both programming languages used for web development, but they differ significantly in features and purpose.
+// JavaScript is a dynamic, interpreted language that does not require explicit type definitions, making it flexible but prone to runtime errors.
+// TypeScript is a superset of JavaScript that adds static typing, allowing developers to specify variable types and catch errors during development rather than at runtime.
+// TS also introduces features like interfaces, enums, and advanced tooling support, which improve code maintainability and scalability for larger projects.
+// While JavaScript runs directly in browsers and Node.js, TypeScript code needs to be transpiled into JavaScript before execution.
+// Overall, TypeScript provides better type safety and developer tooling, whereas JavaScript offers simplicity and widespread compatibility.
