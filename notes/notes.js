@@ -590,3 +590,8 @@ console.log("End");
 // TS also introduces features like interfaces, enums, and advanced tooling support, which improve code maintainability and scalability for larger projects.
 // While JavaScript runs directly in browsers and Node.js, TypeScript code needs to be transpiled into JavaScript before execution.
 // Overall, TypeScript provides better type safety and developer tooling, whereas JavaScript offers simplicity and widespread compatibility.
+
+// interfaces
+// In TypeScript, interfaces are a way to define the shape of an object or a contract that a class or object should adhere to.
+// They specify the properties and methods that an object must have, without providing the implementation details.
+// Interfaces help ensure type safety and enable better code organization and readability.
