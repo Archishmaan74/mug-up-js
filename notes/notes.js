@@ -514,6 +514,14 @@ console.log("End");
 // A closure is a feature of JS which states when a function remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
 
+// Q. What is a state in react?
+// State in React is a built-in object that allows a component to keep track of dynamic data.
+// It's like memory for the component — when the state changes, the component automatically re-renders to reflect those changes in the UI.
+
+// Q. What are props in react?
+// Props in React are short for ‘properties’ — they are used to pass data from one component to another, usually from parent to child.
+// Props are read-only, so a component receiving them cannot modify them directly.
+
 // useEffect()
 // The useEffect hook in React lets you run code after your component has rendered, like fetching data or updating the page title.
 // It’s useful for tasks that happen outside the normal flow of rendering, called side effects.
