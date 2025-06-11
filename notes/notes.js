@@ -522,6 +522,10 @@ console.log("End");
 // Props in React are short for ‘properties’ — they are used to pass data from one component to another, usually from parent to child.
 // Props are read-only, so a component receiving them cannot modify them directly.
 
+// Q. Difference between a state and prop in react?
+// When we update a state using setState or useState, React re-renders the component automatically.
+// But if we update a normal variable, React doesn't track that change and the UI won’t update.
+
 // useEffect()
 // The useEffect hook in React lets you run code after your component has rendered, like fetching data or updating the page title.
 // It’s useful for tasks that happen outside the normal flow of rendering, called side effects.
