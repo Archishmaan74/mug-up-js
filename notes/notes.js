@@ -594,6 +594,31 @@ console.log("End");
 // configureStore() to set up Redux store
 // Wrap <App /> in <Provider store={...}></Provider>
 
+// Steps to Implement Redux Toolkit (RTK) in a React App:
+// 1. Install Redux Toolkit and React-Redux
+
+//     - Run: npm install @reduxjs/toolkit react-redux
+
+// 2. Create a Redux Slice
+
+//     - Define initial state, reducers, and actions using createSlice.
+
+// 3. Create a Redux Store
+
+//     - Use configureStore and add your slice reducers to it.
+
+// 4. Wrap the App with Provider
+
+//     - Import Provider from react-redux and wrap your <App /> with it.
+
+//     - Pass the store to the Provider.
+
+// 5. Use Redux State and Actions in Components
+
+//     - Access state using useSelector.
+
+//     - Dispatch actions using useDispatch.
+
 ///////////////////////////////////////////////     JS VS TS     ///////////////////////////////////////////
 
 // JavaScript (JS) and TypeScript (TS) are both programming languages used for web development, but they differ significantly in features and purpose.
