@@ -513,6 +513,8 @@ console.log("End");
 
 // A closure is a feature of JS which states when a function remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
+// Closures allow an inner function to remember and access the lexical scope of the function where it was defined, even after that outer function has finished executing.
+// It remembers the variables and the overall environment.
 
 // Q. What is a state in react?
 // State in React is a built-in object that allows a component to keep track of dynamic data.
