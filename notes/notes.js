@@ -513,6 +513,20 @@ console.log("End");
 
 // A closure is a feature of JS which states when a function remembers and keeps access to the variables from the scope where it was created (lexical scope), even after the outer function has finished running.
 // This means the closure can still use the variables from its outer function, even when called outside of that function.
+// Closures allow an inner function to remember and access the lexical scope of the function where it was defined, even after that outer function has finished executing.
+// It remembers the variables and the overall environment.
+
+// Q. What is a state in react?
+// State in React is a built-in object that allows a component to keep track of dynamic data.
+// It's like memory for the component — when the state changes, the component automatically re-renders to reflect those changes in the UI.
+
+// Q. What are props in react?
+// Props in React are short for ‘properties’ — they are used to pass data from one component to another, usually from parent to child.
+// Props are read-only, so a component receiving them cannot modify them directly.
+
+// Q. Difference between a state and prop in react?
+// When we update a state using setState or useState, React re-renders the component automatically.
+// But if we update a normal variable, React doesn't track that change and the UI won’t update.
 
 // useEffect()
 // The useEffect hook in React lets you run code after your component has rendered, like fetching data or updating the page title.
@@ -641,6 +655,31 @@ Array.prototype.myReduce = function (callback, initialValue) {
 // useSelector() to read data from the store
 // configureStore() to set up Redux store
 // Wrap <App /> in <Provider store={...}></Provider>
+
+// Steps to Implement Redux Toolkit (RTK) in a React App:
+// 1. Install Redux Toolkit and React-Redux
+
+//     - Run: npm install @reduxjs/toolkit react-redux
+
+// 2. Create a Redux Slice
+
+//     - Define initial state, reducers, and actions using createSlice.
+
+// 3. Create a Redux Store
+
+//     - Use configureStore and add your slice reducers to it.
+
+// 4. Wrap the App with Provider
+
+//     - Import Provider from react-redux and wrap your <App /> with it.
+
+//     - Pass the store to the Provider.
+
+// 5. Use Redux State and Actions in Components
+
+//     - Access state using useSelector.
+
+//     - Dispatch actions using useDispatch.
 
 ///////////////////////////////////////////////     JS VS TS     ///////////////////////////////////////////
 
