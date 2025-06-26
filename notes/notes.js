@@ -531,6 +531,66 @@ console.log("End");
 // It is mainly used to handle things like focusing an input or copying text.
 // It's helpful when we want to keep or access something without refreshing the UI
 
+// POLYFILLS
+// When you create your own version of a built-in method (like .map(), .filter(), .reduce() etc.)
+// to replicate the same functionality — especially for older browsers that might not support it —
+// it’s called a polyfill.
+//
+// .map() polyfill
+Array.prototype.myMap = function (callback, thisArg) {
+  const result = [];
+
+  for (let i = 0; i < this.length; i++) {
+    if (this.hasOwnProperty(i)) {
+      result.push(callback.call(thisArg, this[i], i, this));
+    }
+  }
+
+  return result;
+};
+
+// .filter() polyfill
+Array.prototype.myFilter = function (callback, thisArg) {
+  const result = [];
+
+  for (let i = 0; i < this.length; i++) {
+    if (this.hasOwnProperty(i)) {
+      if (callback.call(thisArg, this[i], i, this)) {
+        result.push(this[i]);
+      }
+    }
+  }
+
+  return result;
+};
+
+// .reduce() polyfill
+Array.prototype.myReduce = function (callback, initialValue) {
+  let accumulator = initialValue;
+  let startIndex = 0;
+
+  if (accumulator === undefined) {
+    // No initial value passed — use first element
+    while (startIndex < this.length && !(startIndex in this)) {
+      startIndex++;
+    }
+
+    if (startIndex >= this.length) {
+      throw new TypeError("Reduce of empty array with no initial value");
+    }
+
+    accumulator = this[startIndex++];
+  }
+
+  for (let i = startIndex; i < this.length; i++) {
+    if (this.hasOwnProperty(i)) {
+      accumulator = callback(accumulator, this[i], i, this);
+    }
+  }
+
+  return accumulator;
+};
+
 // useId()
 // The useId() hook in React generates a unique ID that remains constant across re-renders.
 // It's mainly used for accessibility attributes like id, htmlFor, or aria tags to ensure unique associations.
