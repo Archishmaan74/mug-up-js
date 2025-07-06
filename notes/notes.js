@@ -179,7 +179,7 @@ for (let i = 0; i < 10; i++) {
 // getAttribute: It returns the value of the specified attribute on the specified element.
 // removeAttribute: It removes the specified attribute from the specified element.
 
-// Capturing mode in event bubbling
+// Event Bubbling vs Event Capturing
 // Event bubbling is a way of event propagation in the DOM.
 // It occurs when an event is triggered on an element and then propagates up to its parent elements.
 // In capturing mode, the event starts from the root of the DOM and propagates down to the target element.
