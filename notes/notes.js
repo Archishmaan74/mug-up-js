@@ -556,7 +556,7 @@ Array.prototype.myMap = function(callback) {
 
   for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      result.push(callback(this[i], i, this));
+      result.push(callback(this[i]));
     }
   }
 
@@ -564,12 +564,12 @@ Array.prototype.myMap = function(callback) {
 };
 
 // .filter() polyfill
-Array.prototype.myFilter = function (callback, thisArg) {
+Array.prototype.myFilter = function(callback) {
   const result = [];
 
   for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      if (callback.call(thisArg, this[i], i, this)) {
+      if (callback(this[i])) {
         result.push(this[i]);
       }
     }
@@ -579,26 +579,12 @@ Array.prototype.myFilter = function (callback, thisArg) {
 };
 
 // .reduce() polyfill
-Array.prototype.myReduce = function (callback, initialValue) {
+Array.prototype.myReduce = function(callback, initialValue) {
   let accumulator = initialValue;
-  let startIndex = 0;
 
-  if (accumulator === undefined) {
-    // No initial value passed — use first element
-    while (startIndex < this.length && !(startIndex in this)) {
-      startIndex++;
-    }
-
-    if (startIndex >= this.length) {
-      throw new TypeError("Reduce of empty array with no initial value");
-    }
-
-    accumulator = this[startIndex++];
-  }
-
-  for (let i = startIndex; i < this.length; i++) {
+  for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      accumulator = callback(accumulator, this[i], i, this);
+      accumulator = callback(accumulator, this[i]);
     }
   }
 
