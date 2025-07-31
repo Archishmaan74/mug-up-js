@@ -551,7 +551,7 @@ console.log("End");
 // it’s called a polyfill.
 //
 // .map() polyfill
-Array.prototype.myMap = function(callback) {
+Array.prototype.myMap = function (callback) {
   const result = [];
 
   for (let i = 0; i < this.length; i++) {
@@ -564,7 +564,7 @@ Array.prototype.myMap = function(callback) {
 };
 
 // .filter() polyfill
-Array.prototype.myFilter = function(callback) {
+Array.prototype.myFilter = function (callback) {
   const result = [];
 
   for (let i = 0; i < this.length; i++) {
@@ -579,7 +579,7 @@ Array.prototype.myFilter = function(callback) {
 };
 
 // .reduce() polyfill
-Array.prototype.myReduce = function(callback, initialValue) {
+Array.prototype.myReduce = function (callback, initialValue) {
   let accumulator = initialValue;
 
   for (let i = 0; i < this.length; i++) {
