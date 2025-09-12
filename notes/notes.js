@@ -528,6 +528,11 @@ console.log("End");
 // When we update a state using setState or useState, React re-renders the component automatically.
 // But if we update a normal variable, React doesn't track that change and the UI won’t update.
 
+// Q. What is AJAX?
+// AJAX (Asynchronous JavaScript and XML) is a technique that allows web applications to send requests and receive responses from a server asynchronously,
+// so we can update parts of a webpage without reloading the entire page.
+// Nowadays, JSON is more commonly used than XML for data exchange.
+
 // useEffect()
 // The useEffect hook in React lets you run code after your component has rendered, like fetching data or updating the page title.
 // It’s useful for tasks that happen outside the normal flow of rendering, called side effects.
