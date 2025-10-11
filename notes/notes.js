@@ -641,11 +641,11 @@ Array.prototype.myReduce = function (callback, initialValue) {
 // slice	               A small piece of the store for a specific feature (like todos)	     A section in your diary for todos only
 
 // RTK Checklist
-// createSlice() to write state, actions & reducer
-// useDispatch() in component to send action
-// useSelector() to read data from the store
-// configureStore() to set up Redux store
 // Wrap <App /> in <Provider store={...}></Provider>
+// configureStore() to set up Redux store
+// createSlice() to write state, actions & reducer
+// useSelector() to read data from the store
+// useDispatch() in component to send action
 
 // Steps to Implement Redux Toolkit (RTK) in a React App:
 // 1. Install Redux Toolkit and React-Redux
