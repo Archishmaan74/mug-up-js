@@ -589,10 +589,13 @@ Array.prototype.myReduce = function (callback, initialValue) {
 
   for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      accumulator = callback(accumulator, this[i]);
+      if (accumulator === undefined && i === 0) {
+        accumulator = this[i];
+      } else {
+        accumulator = callback(accumulator, this[i]);
+      }
     }
   }
-
   return accumulator;
 };
 
