@@ -599,6 +599,18 @@ Array.prototype.myReduce = function (callback, initialValue) {
   return accumulator;
 };
 
+// Fibonacci Series function
+Array.prototype.myFibo = function (seriesLength) {
+  if (seriesLength === 0) return [];
+  if (seriesLength === 1) return [0];
+
+  let fib = [0, 1];
+  for (let i = 2; i < seriesLength; i++) {
+    fib[i] = fib[i - 2] + fib[i - 1];
+  }
+  return fib;
+};
+
 // useId()
 // The useId() hook in React generates a unique ID that remains constant across re-renders.
 // It's mainly used for accessibility attributes like id, htmlFor, or aria tags to ensure unique associations.
