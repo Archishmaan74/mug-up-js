@@ -561,7 +561,7 @@ Array.prototype.myMap = function (callback) {
 
   for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      result.push(callback(this[i]));
+      result.push(callback(this[i], i, this));
     }
   }
 
@@ -573,10 +573,8 @@ Array.prototype.myFilter = function (callback) {
   const result = [];
 
   for (let i = 0; i < this.length; i++) {
-    if (this.hasOwnProperty(i)) {
-      if (callback(this[i])) {
-        result.push(this[i]);
-      }
+    if (this.hasOwnProperty(i) && callback(this[i], i, this)) {
+      result.push(this[i]);
     }
   }
 
@@ -586,13 +584,15 @@ Array.prototype.myFilter = function (callback) {
 // .reduce() polyfill
 Array.prototype.myReduce = function (callback, initialValue) {
   let accumulator = initialValue;
+  let hasInitial = initialValue !== undefined;
 
   for (let i = 0; i < this.length; i++) {
     if (this.hasOwnProperty(i)) {
-      if (accumulator === undefined && i === 0) {
+      if (!hasInitial) {
         accumulator = this[i];
+        hasInitial = true;
       } else {
-        accumulator = callback(accumulator, this[i]);
+        accumulator = callback(accumulator, this[i], i, this);
       }
     }
   }
