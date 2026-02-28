@@ -83,7 +83,9 @@ consumePromiseFive();
 
 const getallUsers = async () => {
   try {
-    const response = await fetch("https://dogapi.dog/api/v2/breeds");
+    const response = await fetch(
+      "https://dogapi.dog/api/v2/breeds?page[size]=4",
+    );
     const data = await response.json();
     console.log(data);
   } catch (error) {
@@ -94,7 +96,7 @@ const getallUsers = async () => {
 getallUsers();
 
 ////////////////////////////// then-catch /////////////////////////////
-fetch("https://dogapi.dog/api/v2/breeds")
+fetch("https://dogapi.dog/api/v2/breeds?page[size]=4")
   .then((data) => {
     return data.json();
   })
